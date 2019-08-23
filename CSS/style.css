@@ -1,5 +1,5 @@
 body {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -34,12 +34,18 @@ body {
 
 
 #skills .row{
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
 }
 div.progress{
-  margin:0;
-}/* Vertically aligns progress bar with skill names*/
+  margin: 0;
+  height: 35px;
+}
+
+.col-sm-1half p{
+    font-size: 1.25rem;
+}
+/* Vertically aligns progress bar with skill names and adjusts sizing*/
 
 
 
