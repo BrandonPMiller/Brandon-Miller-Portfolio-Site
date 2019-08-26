@@ -4,63 +4,40 @@ body {
 }
 
 /*----- Skill Bar Styles ------- */
- .col-sm-1half {
-     position: relative;
-     width: 100%;
-     min-height: 1px;
-     padding-right: 15px;
-     padding-left: 15px;
-
-     -webkit-box-flex: 0;
-     -ms-flex: 0 0 12.5%;
-     flex: 0 0 12.5%;
-     max-width: 12.5%
- } 
- .col-sm-10half { 
-    
-    position: relative;
-     width: 100%;
-     min-height: 1px;
-     padding-right: 15px;
-     padding-left: 15px;
-
-     -webkit-box-flex: 0;
-     -ms-flex: 0 0 87.5%;
-     flex: 0 0 87.5%;
-     max-width: 87.5%;
- } /* custom bootstrap classes to add half a col to skill names, for better spacing*/
-
-
-
-
-#skills .row{
-  display: flex;
-  align-items: center;
-}
-div.progress{
-  margin: 0;
-  height: 35px;
+.bar{
+    color: #666;
+    background-color: #eee;
+    height: 28px;
+    margin: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between
 }
 
-.col-sm-1half p{
-    font-size: 1.25rem;
+.bar span{
+    color: #eee;
+    z-index: 1;
+    padding-right: 15px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
 }
-/* Vertically aligns progress bar with skill names and adjusts sizing*/
 
-
-
-.progress-custom{
-    display: table;
-    width: 100%;
-    margin-bottom: 20px;
+.fill{
+    background-color: #3359CC;
+    margin: 0;
 }
-.progress-custom .progress{
-    margin-bottom: 0;
-    vertical-align: middle;
+
+.tag{
+    color: #eee;
+    background-color:#33A5CC;
+    width: 160px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
 }
-.progress-custom .progress-value{
-    display: table-cell;
-    vertical-align: middle;
-    width: 1%;
-    padding: 0 4px;
-}/*Alters display of progress bars to allow just enough space for percentiles. Default labeling looked sloppy*/
