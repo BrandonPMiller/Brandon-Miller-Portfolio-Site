@@ -3,12 +3,18 @@ body {
     margin: 0 auto;
 }
 
+.rotate{
+
+  transform: rotate(-90deg);
+
+}
+
 /*----- Skill Bar Styles ------- */
 .bar{
     color: #666;
     background-color: #eee;
-    height: 28px;
-    margin: 15px;
+    height: 32px;
+    margin: 25px;
     display: flex;
     justify-content: flex-start;
     align-content: space-between
