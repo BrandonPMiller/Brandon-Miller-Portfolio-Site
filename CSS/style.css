@@ -8,8 +8,15 @@ section{
 }
 
 .rotate{
-
-  transform: rotate(-90deg);
+    padding: 0 15px;
+    line-height: 35vw; /* Match container width */
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, 0, 0) rotate(-90deg);
+    transform: translate3d(-50%, 0, 0) rotate(-90deg);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
 
 }
 
