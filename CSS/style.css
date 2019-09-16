@@ -1,5 +1,4 @@
 section {
-    width: 60%;
     margin: 0 auto;
 }
 
@@ -9,7 +8,6 @@ section {
 
 /*---- Vertically centers each section ---*/
 .vertical-align{
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -61,16 +59,25 @@ section {
     margin-right: auto;
 }
 
-/* Rotates and positions header for My Skills*/
-.rotate{
-    padding: 0 15px;
-    line-height: 35vw;
-    white-space: nowrap;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate3d(-50%, 0, 0) rotate(-90deg);
-    transform: translate3d(-50%, 0, 0) rotate(-90deg);
-    -webkit-transform-origin: top center;
-    transform-origin: top center;
 
+@media only screen and (min-width: 575px){
+    section{
+        width: 60%;
+    }
+    .vertical-align{
+            height: 100vh;
+    }
+    /* Rotates and positions header for My Skills for larger screens*/
+    .rotate{
+        padding: 0 15px;
+        line-height: 35vw;
+        white-space: nowrap;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate3d(-50%, 0, 0) rotate(-90deg);
+        transform: translate3d(-50%, 0, 0) rotate(-90deg);
+        -webkit-transform-origin: top center;
+        transform-origin: top center;
+
+}
 }
